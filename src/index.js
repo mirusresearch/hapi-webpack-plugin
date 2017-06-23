@@ -53,8 +53,8 @@ function register(server, options, next) {
     });
   });
 
-  // Expose compiler
-  server.expose({compiler});
+  // Expose compiler and middleware instances
+  server.expose({compiler,middleware:{dev:webpackDevMiddleware,hot:webpackHotMiddleware}});
 
   // Done
   return next();
