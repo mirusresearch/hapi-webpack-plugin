@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir lib",
+    "install": "babel src --out-dir lib",
     "prepublish": "npm run build"
   },
   "repository": {
